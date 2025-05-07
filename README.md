@@ -1,19 +1,21 @@
-# automation
-automate the daily work
-
-Steps to Create and Use a Python Virtual Environment (venv)
-1. Ensure Python is Installed
-   
-Check your Python version (you’ll need 3.3+ for venv):
+#### 1. Check Python version
 python3 --version
-3. Create the Virtual Environment
-   
-Replace myenv with your desired environment name:
-python3 -m venv myenv
 
-This creates a folder myenv/ containing a standalone Python environment.
+#### 2. Create a virtual environment named 'venv'
+python3 -m venv venv
 
-4. Activate the Virtual Environment
-   
-On Linux/macOS:
-source myenv/bin/activate
+### 3. Activate the virtual environment
+#### On macOS/Linux:
+source venv/bin/activate
+
+### On Windows (Command Prompt):
+venv\Scripts\activate.bat
+
+### On Windows (PowerShell):
+venv\Scripts\Activate.ps1
+
+### 4. Install packages
+pip install <package-name>
+
+### 5. Deactivate the environment when done
+deactivate
