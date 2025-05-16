@@ -18,7 +18,7 @@ pipeline {
           python3 routing_expiry_checker.py \
             --action check_routing_expiry \
             --yaml ${ROUTING_YAML_FILE} \
-            --days 15
+            --days 20
         '''
       }
     }
