@@ -6,6 +6,12 @@ pipeline {
   }
 
   stages {
+    stage('Install Dependencies') {
+      steps {
+        sh 'pip3 install --user pyyaml'
+      }
+    }
+
     stage('Check Routing Expiry') {
       steps {
         sh '''
@@ -20,10 +26,10 @@ pipeline {
 
   post {
     success {
-      echo "Routing check passed."
+      echo "✅ Routing check passed."
     }
     failure {
-      echo "Routing check failed. Expiry detected."
+      echo "❌ Routing check failed. Expiry detected or error occurred."
     }
   }
 }
