@@ -19,6 +19,6 @@ producers:
       - consumerB:
           name: 'd0001-test-metrics'
           routing_period: 90
-          start_date: '2025-01-01'
+          start_date: '2025-04-01'
           contacts:
             - 'testteam@example.com'
