@@ -1,0 +1,24 @@
+producers:
+  - id: r0030
+    enabled: true
+    status: ''
+    customer: 'Producer A'
+    name: 'Producer A'
+    contacts:
+      - userid: 'D12345'
+        name: 'user1'
+        email: 'user1@abc.com'
+        notify: true
+    consumer_list:
+      - consumerA:
+          name: 'd0030-test-logs'
+          routing_period: 30
+          start_date: '2025-04-20'
+          contacts:
+            - 'user2@abc.com'
+      - consumerB:
+          name: 'd0001-test-metrics'
+          routing_period: 90
+          start_date: '2025-01-01'
+          contacts:
+            - 'testteam@example.com'
